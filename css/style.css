@@ -1,0 +1,621 @@
+:root {
+    --bg-color: #F9FAFB;
+    --text-color: #222222;
+    --accent-color: #0A3A69;
+    --accent-color2: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+}
+.btn-accent2 {
+    background-color: #E12269;
+    color: var(--bg-color);
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+}
+.btn-accent2:hover {
+    background-color: #E12269;
+    color: var(--bg-color);
+}
+.btn-accent:hover {
+    background-color: #E12269;
+    color: var(--bg-color);
+}
+
+.accent-text {
+    color: var(--accent-color);
+}
+.accent-text2 {
+    color: var(--accent-color2);
+}
+
+/* .hero-section {
+    padding: 100px 0;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+} */
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 204, 43, 0.25);
+}
+
+footer {
+    background-color: var(--accent-color);
+    padding: 30px 0;
+}
+
+.specialist-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-color);
+}
+
+.testimonial-carousel {
+    padding: 40px 0;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Сведение стилей */
+
+.back-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back-link:hover {
+    color: #AFC36A;
+}
+
+.registration-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 50px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section,.content-section-p
+ {
+    padding: 100px 0 50px;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .content-section, .content-section-p
+    {
+        padding: 80px 0 30px;
+    }
+
+        .content-section h1 {
+        font-size: 2rem;
+    }
+    .module-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .circle-number {
+        margin-bottom: 10px;
+    }
+    
+    .module-title {
+        font-size: 1.4rem;
+    }
+
+}
+
+.content-section-p p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.content-section-p ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content-section-p li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+.content-section-p strong {
+    color: var(--accent-color);
+}
+
+.content-section-p h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.module-header {
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.circle-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.module-title {
+    font-size: 1.6rem;
+    margin: 0;
+    color: var(--accent-color);
+}
+
+.highlight-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+
+.content-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: var(--accent-color);
+}
+
+.content-section h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.content-section ul, .content-section ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.content-section strong {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Nav */
+.navbar-nav {
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.7rem !important;
+        padding-right: 0.7rem !important;
+        white-space: nowrap;
+    }
+}
+.brand-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.navbar-brand {
+    gap: 10px; /* Расстояние между картинкой и текстом */
+}
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar-brand {
+        max-width: 70%;
+    }
+    
+    .brand-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    .navbar-logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 576px) {
+    .navbar-brand {
+        max-width: 60%;
+    }
+}
+
+.navbar {
+    background-color: rgba(10, 58, 105, 0.9);
+}
+
+.navbar .nav-link.active {
+    color: var(--accent-color2) !important;
+    font-weight: 600;
+}
+/* Кнопка звонка - заявки */
+.vidualsatun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate_pulse2 2s infinite; 
+  border-radius: 100px;
+}
+
+.campakesad, .vebusines, .nigkugas {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+.vebusines {
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+.campakesad {
+  background: #AFC36A;
+  position: relative;
+  transition: .5s;
+}
+.nigkugas {
+  font-size: 28px;
+  line-height: 70px;
+  animation: phone .9s ease-in-out infinite;
+}
+.dsacin {
+  position: absolute;
+  opacity: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  top: 18px;
+  font-size: 12px;
+  transform: scaleX(-1);
+  transition: .5s ease-in-out;
+}
+.nigkugas i {
+  transition: .5s ease-in-out;
+}
+.campakesad:hover {
+  background: #AFC36A;
+}
+.campakesad:hover i {
+  transition: .5s ease-in-out;
+  transform: scale(0);
+}
+.campakesad:hover .dsacin {
+  transform: scaleX(1);
+  transition: .5s ease-in-out;
+  opacity: 1;
+}
+
+.campakesad:hover::before,
+.campakesad:hover::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #AFC36A;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 1.8s linear infinite;
+  opacity: 0;
+}
+.campakesad:hover::after {
+  animation-delay: .5s;
+ 
+}
+
+@keyframes phone {
+  0%, 100% {
+  transform: rotate(-20deg);
+  }
+  50% {
+  transform: rotate(21deg);
+  }
+}
+@keyframes pulse {
+  0% {
+  transform: scale(0.5);
+  opacity: 0;
+  }
+  50% {
+  opacity: 1;
+  }
+  100% {
+  transform: scale(1.2);
+  opacity: 0;
+  }
+  
+}
+
+@keyframes animate_pulse2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 184, 37, 0.67); /* было rgba(0, 189, 31, 0.67) */
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(230, 184, 37, 0.27); /* было rgba(0, 189, 31, 0.27) */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 184, 37, 0.17); /* было rgba(0, 189, 31, 0.17) */
+  }
+}
+
+.cta-button {
+    animation: gentlePulse 2.5s infinite;
+    transition: transform 0.2s, background-color 0.2s;
+    -webkit-tap-highlight-color: rgba(136, 99, 134, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:active {
+    transform: scale(0.95);
+    background-color: #AFC36A;
+}
+
+/* Более мягкая пульсация, не раздражает глаза */
+@keyframes gentlePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(136, 99, 134, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(136, 99, 134, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(136, 99, 134, 0);
+    }
+}
+
+/* Для десктопов добавим hover */
+@media (hover: hover) {
+    .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(136, 99, 134, 0.3);
+    }
+}
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.button-grid .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.75rem 1rem;
+}
+
+/* Десктоп - обе в одну строку */
+@media (min-width: 769px) {
+    .button-grid .btn {
+        height: 60px; /* Одинаковая высота для обеих */
+    }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .button-grid .btn {
+        height: 90px; /* Обе кнопки одинаковой высоты */
+        /* Первая (1 строка) и вторая (2 строки) будут центрированы автоматически */
+    }
+}
+
+
+/* Додайте наприкінці файлу style.css */
+
+/* Фон у кольорах прапора України */
+.ukraine-flag-bg {
+    background: linear-gradient(180deg, #0057B7 0%, #0057B7 35%, #FFD700 35%, #FFD700 100%);
+    position: relative;
+    z-index: 0;
+    margin-top: 0; /* ← ДОДАЙТЕ ЦЕЙ РЯДОК */
+    min-height: 100vh; /* ← ДОДАЙТЕ ЦЕЙ РЯДОК */
+    display: flex; /* ← ДОДАЙТЕ ЦЕЙ РЯДОК */
+    align-items: center; /* ← ДОДАЙТЕ ЦЕЙ РЯДОК */
+    
+}
+
+/* Напівпрозорий фон для текстових блоків */
+.content-block {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Альтернативний варіант - світліший фон з більшою прозорістю */
+.content-block-light {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Для секцій, де потрібен лише легкий відтінок */
+.ukraine-flag-light {
+    background: linear-gradient(135deg, rgba(0, 87, 183, 0.08) 0%, rgba(255, 215, 0, 0.08) 100%);
+}
+
+/* Додаткові стилі для hero-секції */
+
+.hero-flag-bg .hero-content-block h1 {
+    color: #1a1a1a;
+}
+
+.hero-flag-bg .hero-content-block .accent-text {
+    color: #0057B7; /* Синій колір для акцентів */
+}
+
+/* Для кнопок у hero-секції на фоні прапора */
+.hero-flag-bg .btn-accent {
+    background: #0057B7;
+    border-color: #0057B7;
+    transition: all 0.3s ease;
+}
+
+.hero-flag-bg .btn-accent:hover {
+    background: #003d80;
+    border-color: #003d80;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 87, 183, 0.3);
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+    .hero-content-block {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .hero-flag-bg {
+        padding: 100px 0 60px;
+    }
+}
+
+/* Декоративний ефект - легкі хвилі прапора (опціонально) */
+.hero-flag-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 100px,
+            rgba(0, 87, 183, 0.03) 100px,
+            rgba(0, 87, 183, 0.03) 102px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 50px,
+            rgba(255, 215, 0, 0.02) 50px,
+            rgba(255, 215, 0, 0.02) 52px
+        );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-flag-bg .container {
+    position: relative;
+    z-index: 1;
+}
