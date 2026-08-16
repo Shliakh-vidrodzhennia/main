@@ -619,3 +619,17 @@ footer {
     position: relative;
     z-index: 1;
 }
+
+.nlp-credit {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0.4rem;
+}
+
+.nlp-credit strong {
+    color: #E12269;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1;
+}
